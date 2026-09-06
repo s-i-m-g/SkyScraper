@@ -44,3 +44,14 @@ int ft_expo(int a, int b) {
   }
   return ((ft_expo(a, b - 1)));
 }
+
+int intrev(int n) {
+  int a;
+
+  a = 0;
+  while (n > 0) {
+    a = a * 10 + n % 10;
+    n = n / 10;
+  }
+  return (a);
+}
