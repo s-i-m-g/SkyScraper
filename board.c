@@ -22,13 +22,10 @@ int **ft_comp(int **num, int base) {
   while (base < s) {
     i2 = 1;
     i4 = 0;
-    printf("value left : %d\n", num[base][0]);
-    printf("value right : %d\n", num[base + 4][0]);
     while (num[base][i2]) {
       i3 = 1;
       while (num[base + 4][i3]) {
         if (num[base][i2] == intrev(num[base + 4][i3])) {
-          printf("shared value : %d\n", num[base][i2]);
           pos[i][i4] = num[base][i2];
           i4++;
         }
@@ -36,8 +33,6 @@ int **ft_comp(int **num, int base) {
       }
       i2++;
     }
-    pos[i][i4] = 0;
-    printf("-----------------\n");
     base++;
     i++;
   }
