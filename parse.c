@@ -12,7 +12,6 @@ int ft_parse_argv(char *argv[], int **num) {
   while (argv[1][i]) {
     if (argv[1][i] != 32) {
       num[i2][0] = argv[1][i] - 48;
-      printf("%d\n", num[i2][0]);
       i2++;
     }
     i++;

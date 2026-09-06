@@ -17,5 +17,7 @@ int **ft_comp(int **num, int base);
 long *ft_pos_to_boards(int **pos);
 long ft_col_to_row(long board);
 long ft_find_match(long *boards1, long *boards2);
+void ft_fill_pos(int **num, int *pos, int base);
+long ft_join(int **pos, int *i);
 
 #endif
