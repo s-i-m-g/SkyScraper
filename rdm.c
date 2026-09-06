@@ -6,7 +6,7 @@
 /*   By: sganase <simon.ganase@learner.42.tech>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/06 15:35:25 by sganase           #+#    #+#             */
-/*   Updated: 2026/09/06 15:35:27 by sganase          ###   ########.fr       */
+/*   Updated: 2026/09/06 16:53:41 by sganase          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,21 +40,6 @@ int	ft_strlen(char *str)
 	return (i);
 }
 
-int	ft_strval(char *str)
-{
-	int	i;
-	int	a;
-
-	i = 0;
-	a = 0;
-	while (str[i])
-	{
-		a += i;
-		i++;
-	}
-	return (a);
-}
-
 int	ft_expo(int a, int b)
 {
 	a = a * 10;
@@ -68,6 +53,19 @@ int	ft_expo(int a, int b)
 int	intrev(int n)
 {
 	int	a;
+
+	a = 0;
+	while (n > 0)
+	{
+		a = a * 10 + n % 10;
+		n = n / 10;
+	}
+	return (a);
+}
+
+long	lintrev(long n)
+{
+	long	a;
 
 	a = 0;
 	while (n > 0)

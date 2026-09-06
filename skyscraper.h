@@ -6,7 +6,7 @@
 /*   By: sganase <simon.ganase@learner.42.tech>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/06 15:35:46 by sganase           #+#    #+#             */
-/*   Updated: 2026/09/06 15:47:54 by sganase          ###   ########.fr       */
+/*   Updated: 2026/09/06 16:55:01 by sganase          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,12 @@ void	ft_putstr(char *str);
 int		ft_strlen(char *str);
 int		ft_strval(char *str);
 int		intrev(int n);
+long	lintrev(long n);
 int		ft_expo(int a, int b);
 int		ft_parse_argv(char *argv[], int **num);
 int		ft_put_value(int **num);
 int		ft_put_value2(int **num);
+int		ft_put_value3(int **num);
 int		**ft_comp(int **num, int base);
 long	*ft_pos_to_boards(int **pos);
 long	ft_col_to_row(long board);

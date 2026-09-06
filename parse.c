@@ -6,7 +6,7 @@
 /*   By: sganase <simon.ganase@learner.42.tech>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/06 15:35:09 by sganase           #+#    #+#             */
-/*   Updated: 2026/09/06 16:11:46 by sganase          ###   ########.fr       */
+/*   Updated: 2026/09/06 17:32:26 by sganase          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,15 +51,6 @@ int	ft_put_value(int **num)
 			num[i][5] = 4312;
 			num[i][6] = 4321;
 		}
-		if (num[i][0] == 3)
-		{
-			num[i][1] = 1243;
-			num[i][2] = 1342;
-			num[i][3] = 1324;
-			num[i][4] = 2341;
-			num[i][5] = 2314;
-			num[i][6] = 2134;
-		}
 		i++;
 	}
 	ft_put_value2(num);
@@ -89,6 +80,28 @@ int	ft_put_value2(int **num)
 		}
 		if (num[i][0] == 4)
 			num[i][1] = 1234;
+		i++;
+	}
+	ft_put_value3(num);
+	return (0);
+}
+
+int	ft_put_value3(int **num)
+{
+	int	i;
+
+	i = 0;
+	while (i < 16)
+	{
+		if (num[i][0] == 3)
+		{
+			num[i][1] = 1243;
+			num[i][2] = 1342;
+			num[i][3] = 1324;
+			num[i][4] = 2341;
+			num[i][5] = 2314;
+			num[i][6] = 2134;
+		}
 		i++;
 	}
 	return (0);

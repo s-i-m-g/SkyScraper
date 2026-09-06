@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: sganase <simon.ganase@learner.42.tech>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/06 15:34:57 by sganase           #+#    #+#             */
-/*   Updated: 2026/09/06 15:34:58 by sganase          ###   ########.fr       */
+/*   Created: 2026/09/06 16:32:14 by sganase           #+#    #+#             */
+/*   Updated: 2026/09/06 16:36:45 by sganase          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ long	*ft_pos_to_boards(int **pos)
 	int		i[4];
 	int		i5;
 
-	boards = (long *)malloc(8 * 100);
+	boards = (long *)malloc(8 * 5000);
 	i5 = 0;
 	i[0] = -1;
 	while (pos[0][++i[0]])
